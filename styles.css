@@ -179,3 +179,9 @@ footer p {
     color: #F4CE14;
   }
 
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
