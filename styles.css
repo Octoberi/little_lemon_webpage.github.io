@@ -89,6 +89,24 @@ nav a:hover {
     overflow: clip;
 }
 /* overlay text banner */
+/* ایجاد انیمیشن برای تیتر اورلی */
+
+@keyframes buzzer {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* اعمال انیمیشن بازر برای هاور */
+  .buzzer {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .buzzer:hover {
+    animation: buzzer 0.4s infinite;
+    color: #F4CE14;
+  }
 
 section {
     display: flex;
@@ -159,29 +177,8 @@ footer p {
     border-radius: 20px;
 }
 
-
-/* ایجاد انیمیشن برای تیتر اورلی */
-
-@keyframes buzzer {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-    100% { transform: translateY(0); }
-  }
-  
-  /* اعمال انیمیشن بازر برای هاور */
-  .buzzer {
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .buzzer:hover {
-    animation: buzzer 0.4s infinite;
-    color: #F4CE14;
-  }
-
 a {
     text-decoration: none;
     text-align: center;
     font-size: 1.7rem;
 }
-
